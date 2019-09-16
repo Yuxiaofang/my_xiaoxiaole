@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>开心消消乐</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		canvas{
+			display: block;
+			margin-top: 10px;
+		}
+		button{
+			padding:4px;
+		}
+		table{
+			position: absolute;
+			top:50px;
+			left:560px;
+			border-collapse:collapse;
+		}
+		table,tr,td{
+			border:1px solid #eee;
+		}
+		td{
+			width:20px;
+			height:20px;
+		}
+
+		#droptable{
+			left:770px;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="mycanvas"></canvas>
+
+	<table id="matrixtable">
+		<caption>编码矩阵</caption>
+		<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+	</table>
+
+	<table id="droptable">
+		<caption>每个元素需要下落的行数</caption>
+		<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+	</table>
+
+	<script type="text/javascript" src="js/Game.js"></script>
+	<script type="text/javascript" src="js/underscore-min.js"></script>
+	<script type="text/javascript" src="js/Sprite.js"></script>
+	<script type="text/javascript" src="js/Map.js"></script>
+	<script type="text/javascript">
+		var game = new Game();
+	</script>
+</body>
+</html>
